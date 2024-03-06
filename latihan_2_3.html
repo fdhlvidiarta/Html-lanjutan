@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="img/png"
+      href="html_form/gambar/icon.png"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="html_form/css/main.css" />
+    <title>Div dan Span</title>
+  </head>
+
+  <body>
+    <div id="header"> <!--header-->
+      <div>
+        <h1>Judul/Header Website</h1>
+      </div>
+    <div>
+
+    <div id="main">
+        <div id="link"> <!--link-->
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </div>
+
+        <div id="content"> <!--content--> 
+          <h1>-Form Pendaftaran Mahasiswa Baru</h1>
+          <form action="proses.php" method="post" enctype="multipart/form-data">
+           <label for="nama_lengkap">Nama Lengkap:</label>
+    <input type="text" id="nama_lengkap" name="nama_lengkap" required><br>
+
+    <label for="tempat_tanggal_lahir">Tempat/Tanggal Lahir:</label>
+    <input type="text" id="tempat_lahir" name="tempat_lahir" required>/
+    <select id="tanggal_lahir" name="tanggal_lahir" required>
+        <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+        <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option>
+        <option value="11">11</option> <option value="12">12</option> <option value="13">13</option> <option value="14">14</option> <option value="15">15</option>
+        <option value="16">16</option> <option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option>
+        <option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option> <option value="25">25</option>
+        <option value="26">26</option> <option value="27">27</option> <option value="28">28</option> <option value="29">29</option> <option value="30">30</option>
+        <option value="31">31</option>
+    </select>-
+    <select id="bulan_lahir" name="bulan_lahir" required>
+        <option value="Januari">1</option> <option value="Februari">2</option> <option value="Maret">3</option> <option value="April">4</option> <option value="Mei">5</option>
+        <option value="Juni">6</option> <option value="Juli">7</option> <option value="Agustus">8</option> <option value="September">9</option> <option value="Oktober">10</option>
+        <option value="November">11</option> <option value="Desember">12</option>
+    </select>-
+    <select id="tahun_lahir" name="tahun_lahir" required>
+        <option value="1989">1989</option> <option value="1990">1990</option> <option value="1991">1991</option> <option value="1992">1992</option> <option value="1993">1993</option> <option value="1994">1994</option>
+        <option value="1995">1995</option> <option value="1996">1996</option> <option value="1997">1997</option> <option value="1998">1998</option> <option value="1999">1999</option> <option value="2000">2000</option>
+        <option value="2001">2001</option> <option value="2002">2002</option> <option value="2003">2003</option> <option value="2004">2004</option> <option value="2005">2005</option> <option value="2006">2006</option>
+    </select><br>
+
+    <label for="agama">Agama:</label>
+    <select id="agama" name="agama" required>
+        <option value="">-- Pilih --</option>
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Katolik">Katolik</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Budha">Budha</option>
+        <option value="Konghucu">Konghucu</option>
+    </select><br>
+
+    <label for="jenis_kelamin">Jenis Kelamin:</label>
+    <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki_laki" required>
+    <label for="laki_laki">Laki-laki</label>
+    <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+    <label for="perempuan">Perempuan</label><br>
+
+    <label for="no_ijazah">No. Ijazah SMA/MA:</label>
+    <input type="text" id="no_ijazah" name="no_ijazah" required><br>
+
+    <label for="foto">Foto (Ukuran FileMax. 20 KB):</label>
+    <input type="file" id="foto" name="foto" accept="image/" required><br>
+
+    <label for="nama_ayah">Nama Ayah:</label>
+    <input type="text" id="nama_ayah" name="nama_ayah" required><br>
+
+    <label for="nama_ibu">Nama Ibu:</label>
+    <input type="text" id="nama_ibu" name="nama_ibu" required><br>
+
+    <label for="alamat_rumah">Alamat Rumah:</label>
+    <textarea id="alamat_rumah" name="alamat_rumah" required></textarea><br>
+
+    <label for="no_telp">No. Telp:</label>
+    <input type="text" id="no_telp" name="no_telp" required><br>
+
+    <label for="nama_sekolah_asal">Nama Sekolah Asal:</label>
+    <input type="text" id="nama_sekolah_asal" name="nama_sekolah_asal" required><br>
+
+    <label for="alamat_sekolah_asal">Alamat Sekolah Asal:</label>
+    <textarea id="alamat_sekolah_asal" name="alamat_sekolah_asal" required></textarea><br>
+
+    <label for="jurusan">Jurusan Dipilih:</label>
+    <select id="jurusan" name="jurusan" required>
+        <option value="pilih">-pilih-</option>  <option value="Adbis">Administrasi Bisnis</option>  <option value="Akuntansi">Akuntansi</option>  <option value="tkk">Teknik Komputer Kontrol</option>
+        <option value="teklis">Teknik Listrik</option>  <option value="tro">Teknologi Rekayasa Otomotif</option>  <option value="tka">Teknik Perkeretaapian</option>
+        <option value="ti">Teknologi Informasi</option>  <option value="trpl">Teknologi Rekayasa Perangkat Lunak</option>
+    </select>
+        </div>
+      </div>
+
+    <div id="footer"> <!--footer-->
+      <i>copyright@Fadhil Vidiarta_233307047_2024</i>
+    </div>
+  </body>
+</html>

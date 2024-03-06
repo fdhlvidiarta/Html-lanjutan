@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Sederhana</title>
+    <link
+      rel="icon"
+      type="img/png"
+      href="html_form/gambar/icon.png"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <label for="depan">Nama Depan : </label><br />
+      <input type="text" id="depan" name="i_name" value="Fadhil" /><br />
+      <label for="belakang">Nama Belakang : </label><br />
+      <input type="text" id="belakang" name="i_name" value="Vidiarta" /><br />
+      <input type="submit" value="Kirim" />
+      <input type="reset" value="Reset" />
+    </form>
+    <p>
+      Pengguna dapat memasukkan nama depan dan belakang, tetapi karena kedua
+      input memiliki nama yang sama, hanya nilai dari input terakhir yang akan
+      dikirimkan saat formulir dikirimkan. Kemudian jika Anda mengklik tombol
+      <b>"Kirim"</b>, data formulir akan dikirim ke halaman bernama
+      <b> "/action_page.php"</b>.
+    </p>
+    <p><!-- Kesimpulan Ujicoba Disini --></p>
+  </body>
+</html>
